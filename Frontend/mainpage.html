@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Voice To Notion</title>
+  </head>
+  <body>
+    <div class="main">
+    <div class="container">
+      <p class="heading">Voice To Notion</p>
+      <div class="options">
+        <div class="anguage">
+          <p>Language</p>
+          <select name="input-language" id="language"></select>
+        </div>
+      </div>
+      <div class="line"></div>
+      <button class="btn record">
+        <div class="icon">
+          <ion-icon name="mic-outline"></ion-icon>
+          <img src="bars.svg" alt="" />
+        </div>
+        <p>Start Listening</p>
+      </button>
+      <p class="heading">Result :</p>
+      <div
+        class="result"
+        spellcheck="false"
+        contenteditable="true"
+        placeholder="Text will be shown here"
+      >
+        <p class="interim"></p>
+      </div>
+      <div class="buttons">
+        <button class="btn clear">
+          <ion-icon name="trash-outline"></ion-icon>
+          <p>Clear</p>
+        </button>
+        <button class="btn download" disabled>
+          <ion-icon name="cloud-download-outline"></ion-icon>
+          <p>Download</p>
+        </button>
+      </div>
+    </div>
+    <div class="right-container">
+      <h2>Notes Details</h2>
+      <div class="input-tag">
+        <form id="notesForm">
+        <div>
+          <input type="text" placeholder="Heading" name="heading" class="Notes_details Heading">
+        </div>
+        <div>
+          <input type="text" placeholder="Description" class="Notes_details Description">
+        </div>
+        <div>
+          <input type="text" placeholder="Source" class="Notes_details Source">
+        </div>
+        <div>
+          <input type="text" placeholder="Tag" class="Notes_details Tag">
+        </div>
+        <div>
+          <input type="text" placeholder="Intergration_secret" class="Notes_details secret">
+        </div>
+        <div>
+          <input type="text" placeholder="Database_Id" class="Notes_details dbid">
+        </div>
+        <div>
+          <input type="submit" class="submit-button" value="Send to Notion">
+        </div>
+      </form>
+      </div>
+    </div> 
+  </div>
+
+    <!-- IONICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- LANGUAGES -->
+    <script src="languages.js"></script>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+  </body>
+</html>

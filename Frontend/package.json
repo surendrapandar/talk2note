@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "axios": "^1.6.7",
+    "require": "^2.4.20"
+  }
+}
