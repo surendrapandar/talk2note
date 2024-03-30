@@ -1,4 +1,3 @@
-
 // Selecting elements from the DOM using querySelector
 const recordBtn = document.querySelector(".record"),
   result = document.querySelector(".result"),
