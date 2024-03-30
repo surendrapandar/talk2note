@@ -1,5 +1,23 @@
 {
     "rewrites":  [
         {"source": "/(.*)", "destination": "/"}
-     ]
+     ],
+
+     
+        "version": 2,
+        "builds": [
+          {
+            "src": "./Backend/server.js",
+            "use": "@now/node"
+          }
+        ],
+        "routes": [
+          {
+            "src": "/(.*)",
+            "dest": "server.js"
+          }
+        ]
+      
  }
+
+ 
