@@ -162,6 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Send form data to backend Node.js server using Axios
     axios.post("https://talk2note-fpa4.vercel.app/notion", formData)
+    // axios.post("https://127.0.0.1:3000/notion", formData)
       .then(response => {
         console.log("Form data submitted successfully:", response.data);
         // Handle response from the server if needed

@@ -224,6 +224,8 @@ body.dark-theme {
   position: relative;
 }
 
+
+
 .active-link::before {
   content: '';
   position: absolute;
@@ -296,6 +298,10 @@ body.dark-theme {
 }
 
 /*=============== ABOUT ===============*/
+
+.notion_db_link {
+  color: red;
+}
 .about__container {
   gap: 2.5rem;
 }
