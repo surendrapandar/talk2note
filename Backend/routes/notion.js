@@ -6,7 +6,7 @@ router.post('/', (req, res) => {
   const formData = req.body; // Access form data from request body
   console.log("Form data received:", formData);
   const notion = new Client({ auth: formData.secret});
-  res.json({ success: true, message: "Form data received successfully" });
+  
   (async () => {
     const response = await notion.pages.create({
       "cover": {
@@ -74,7 +74,9 @@ router.post('/', (req, res) => {
         
     ]
   });
-    // console.log(response);
+  
+    console.log(response);
+    res.json({ success: true, message: "Form data received successfully " + response });
   })();
 })
 
