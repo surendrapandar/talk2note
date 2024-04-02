@@ -12,7 +12,7 @@ router.post('/', (req, res) => {
       "cover": {
           "type": "external",
           "external": {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Tuscankale.jpg"
+              "url": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800"
           }
       },
       "icon": {
